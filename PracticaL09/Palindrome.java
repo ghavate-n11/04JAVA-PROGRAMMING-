@@ -1,25 +1,26 @@
 package PracticaL09;
-
-// Simple interview-friendly two-pointer palindrome check.
+import java.util.Scanner;
 class Palindrome
 {
-    public static void main(String[] ma)
+    public static void main(String[] args)
     {
-        String s = "RADAR";
-
-        int left = 0;
-        int right = s.length()-1;
-
-        while(left<right)
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string to check if it is palindrome or not: ");
+        String str = sc.nextLine();
+        String rev = "";
+        for(int i=str.length()-1; i>=0; i--)
         {
-            if(s.charAt(left) != s.charAt(right))
-            {
-                System.out.println("String is not a palindrome");
-                return;
-            }
-            left++;
-            right--;
+            rev = rev + str.charAt(i);                                              
+
+        }               
+
+        if(str.equals(rev))
+        {
+            System.out.println("The string is palindrome");
         }
-        System.out.println("String is a palindrome");
+        else
+        {
+            System.out.println("The string is not palindrome");
+        }
     }
 }

@@ -1,57 +1,24 @@
 package PracticaL07;
-// c) Addition of two matrix.
-public class MatrixAddition {
-    public static void main(String[] args) {
 
-        // First Matrix
-        int[][] A = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
+public class MatrixAddition 
+{
+    public static void main(String[]aa)
+    {
+      int matrix1 [][] = {{1,2}, {4,5}};
+      int  [][] matrix2 = {{11,12},{14,15}};
 
-        // Second Matrix
-        int[][] B = {
-            {9, 8, 7},
-            {6, 5, 4},
-            {3, 2, 1}
-        };
+      int result[][] = new int [2][2];
 
-        // Result Matrix
-        int[][] C = new int[3][3];
+      
 
-        // Addition of Matrices
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                C[i][j] = A[i][j] + B[i][j];
-            }
+      for(int i=0; i<2; i++)
+      {
+        for(int j=0; j<matrix1[i].length; j++)
+        {
+            result[i][j] = matrix1[i][j] + matrix2[i][j];
+            System.out.print(result[i][j]+" ");
         }
-
-        // Display First Matrix
-        System.out.println("First Matrix:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(A[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        // Display Second Matrix
-        System.out.println("\nSecond Matrix:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(B[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        // Display Result Matrix
-        System.out.println("\nAddition of Two Matrices:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(C[i][j] + " ");
-            }
-            System.out.println();
-        }
+        System.out.println();
+      }
     }
 }
