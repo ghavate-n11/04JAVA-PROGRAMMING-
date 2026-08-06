@@ -12,7 +12,7 @@ class Student
         age = 22;
     }
 
-    Student(String n, int a)
+    Student(String n, int a)//Parameterized Constructor
     {
         name = n;
         age = a;
