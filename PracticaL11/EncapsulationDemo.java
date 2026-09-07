@@ -1,43 +1,54 @@
-package PracticaL11;
-//Write a Java program to demonstrate encapsulation using access specifiers.
-// Java program to demonstrate encapsulation
-class Student
+
+class EncapsulationDemo
 {
-    // Private data members
-    private String name;
-    private int age;
+    public static void main(String[]args)
+    {
+        System.out.println("\nEncapsulationDemo\n");
 
-    // Setter methods
-    public void setName(String name) {
-        this.name = name;
-    }
+        System.out.println("\n***BANK OF BARODA***\n");
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 
-    // Getter methods
-    public String getName() {
-        return name;
-    }
+        BankAccount ba = new BankAccount();
 
-    public int getAge() {
-        return age;
+        ba.setName("ABCDEFGH");
+        ba.setAccountNumber(910293293812L);
+
+        System.out.println("Account Holder Name: " + ba.getName());
+        System.out.println("Account Number: " + ba.getAccountNumber());
+
     }
 }
 
-public class EncapsulationDemo {
-    public static void main(String[] args) {
 
-        // Creating object
-        Student s = new Student();
+class BankAccount
+{
+    private String Name;
+    private long AccountNumber;
 
-        // Setting values using setter methods
-        s.setName("Rahul");
-        s.setAge(20);
 
-        // Getting values using getter methods
-        System.out.println("Name: " + s.getName());
-        System.out.println("Age: " + s.getAge());
+    public void setName(String AccName)
+    {
+        Name = AccName;
+    }
+
+    public void setAccountNumber(long AccNumber )
+    {
+        if(AccNumber > 0)
+        {
+                  AccountNumber = AccNumber;
+        }
+      
+    }
+
+    public String getName()
+    {
+        return Name;
+    }
+
+    public long getAccountNumber()
+    {
+        return AccountNumber;
     }
 }
+
+

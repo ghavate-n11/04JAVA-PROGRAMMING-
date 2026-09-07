@@ -4,8 +4,14 @@ public class Prime {
     public static void main(String[] args) 
     {
 
-        int num = 2;
+        int num = 12;
         int i = 2;
+
+        if(num == 2) 
+        {
+            System.out.println(num + " is a prime number.");
+            return;
+        }
 
         do {
             if (num % i == 0) 

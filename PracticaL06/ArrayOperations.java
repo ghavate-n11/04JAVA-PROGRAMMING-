@@ -72,8 +72,9 @@ public class ArrayOperations {
         System.out.println("Sum of Matrix Elements = " + total);
 
         // Transpose of Matrix
+        
         System.out.println("\nTranspose of Matrix:");
-        for (int i = 0; i < matrix[0].length; i++) {
+        for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
                 System.out.print(matrix[j][i] + " ");
             }

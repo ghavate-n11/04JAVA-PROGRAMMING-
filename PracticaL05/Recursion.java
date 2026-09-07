@@ -16,6 +16,6 @@ public class Recursion
 
     public static void main(String[]aa)
     {
-        System.out.println("Factorial of 9! is : "+factorial(9));
+        System.out.println("Factorial of 9! is : "+factorial(1));
     }
 }
