@@ -22,6 +22,12 @@ class StudentRecord
         this.course = course;
     }
 
+
+    void printHeader() 
+    {
+        System.out.println("\n--- Student Details ---");
+    }
+    
     // 3. Using this to invoke current class method
     void display() 
     {
@@ -31,10 +37,7 @@ class StudentRecord
         System.out.println("Course : " + this.course);
     }
 
-    void printHeader() 
-    {
-        System.out.println("\n--- Student Details ---");
-    }
+    
 }
 
 public class ThisKeywordDemo 

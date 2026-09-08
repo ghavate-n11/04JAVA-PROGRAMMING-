@@ -1,58 +1,50 @@
 package PracticaL12;
 
-// Base Class (Superclass)
-class Grandfather 
+class GrandFather
 {
-    void showGrandfather() 
+    void collect()
     {
-        System.out.println("I am the Grandfather.");
+        System.out.println("Money Collected Successfully");
     }
 }
 
-// Parent Class (Part of Multilevel: Grandfather -> Father)
-class Father extends Grandfather 
+class father extends GrandFather
 {
-    void showFather() 
+    void lost()
     {
-        System.out.println("I am the Father.");
+        System.out.println("Money Lost, Better Luck Next Time");
     }
 }
 
-// Child Class 1: MULTILEVEL INHERITANCE (Grandfather -> Father -> Son)
-class Son extends Father 
+class son extends father
 {
-    void showSon() 
-    {
-        System.out.println("I am the Son.");
-    }
+   void deposit()
+   {
+    System.out.println("Money Deposited  Successfully");
+   }
 }
 
-// Child Class 2: SINGLE INHERITANCE (Grandfather -> Daughter)
-class Daughter extends Grandfather 
+class Daughter extends GrandFather
 {
-    void showDaughter() 
-    {
-        System.out.println("I am the Daughter.");
-    }
-}
-
-public class HybridInheritanceDemo 
-{
-    public static void main(String[] args) 
-    {
-        System.out.println("=== HYBRID INHERITANCE (Multilevel + Single) ===");
-        
-        System.out.println("\n--- [Multilevel Inheritance] Grandfather -> Father -> Son ---");
-        Son son = new Son();
-        son.showGrandfather(); // Inherited from Grandfather
-        son.showFather();       // Inherited from Father
-        son.showSon();          // Own method
-        
-        System.out.println("\n--- [Single Inheritance] Grandfather -> Daughter ---");
-        Daughter daughter = new Daughter();
-        daughter.showGrandfather(); // Inherited from Grandfather
-        daughter.showDaughter();    // Own method
-    }
+     void withdraw()
+     {
+        System.out.println("Money withdrawal Successfully");
+     }
 }
 
 
+class HybridInheritanceDemo
+{
+    public static void main(String []aa)
+    {
+        son s = new son();
+        s.collect();
+        s.lost();
+        s.deposit();
+
+
+        Daughter  d = new Daughter();
+        d.withdraw();
+        d.collect();
+    }
+}

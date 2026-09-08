@@ -1,62 +1,56 @@
 package PracticaL13;
 
-// Base Class
-class Bank 
+class Vehicle
 {
-    double interestRate = 5.0;
+    int speed = 50;
 
-    // 1. Parent Constructor
-    Bank() 
+    Vehicle()
     {
-        System.out.println("Central Bank initialized.");
+        System.out.println("Vehicle Constructor");
     }
 
-    // 2. Parent Method
-    void showPolicy() 
+    void display()
     {
-        System.out.println("Standard Bank Policy applies.");
+        System.out.println("Vehicle is running");
     }
 }
 
-// Derived Class
-class SBI extends Bank 
+class Car extends Vehicle
 {
-    double interestRate = 7.5; // Shadows parent's variable
+    int speed = 100;
 
-    // Using super() to call parent constructor
-    SBI() 
+    Car()
     {
-        super(); // Calls Bank() constructor
-        System.out.println("SBI Branch initialized.");
+        super();    // Calls Vehicle constructor
+        System.out.println("Car Constructor");
     }
 
-    // Overriding parent method
-    void showPolicy() 
+    void display()
     {
-        System.out.println("SBI Specific Policy applies.");
+        System.out.println("Car is running");
     }
 
-    void displayDetails() 
+    void show()
     {
-        // 1. Using super.variable vs this.variable
-        System.out.println("\nParent Interest Rate (super.interestRate): " + super.interestRate + "%");
-        System.out.println("SBI Interest Rate    (this.interestRate) : " + this.interestRate + "%");
+        // Access parent variable
+        System.out.println("Vehicle Speed: " + super.speed);
 
-        // 2. Using super.method() vs current method
-        System.out.println("\nCalling Parent Method using super.showPolicy():");
-        super.showPolicy();
+        // Access child variable
+        System.out.println("Car Speed: " + this.speed);
 
-        System.out.println("\nCalling Overridden Method in SBI:");
-        this.showPolicy();
+        // Call parent method
+        super.display();
+
+        // Call child method
+        this.display();
     }
 }
 
-public class SuperKeywordDemo 
+public class SuperKeywordDemo
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        System.out.println("=== DEMO OF 'super' KEYWORD ===");
-        SBI sbi = new SBI();
-        sbi.displayDetails();
+        Car c = new Car();
+        c.show();
     }
 }

@@ -1,8 +1,8 @@
 package PracticaL15;
 
-abstract class Vehicle
+abstract class Vehicle//abstract class it is partially implemented class 
 {
-    abstract void start();
+    abstract void start();//abstract method it is not implemented method
 
     void stop()
     {
@@ -10,7 +10,7 @@ abstract class Vehicle
     }
 }
 
-interface ElectricVehicle
+interface ElectricVehicle//interface it is not fully implemented class it is fully abstract class
 {
     void chargeBattery();
 }
@@ -22,7 +22,7 @@ interface ConnectedVehicle
 
 class ElectricCar extends Vehicle implements ElectricVehicle, ConnectedVehicle
 {
-    @Override
+    @Override//it is used to override the method of parent class
     void start()
     {
         System.out.println("Electric car started");
