@@ -1,19 +1,25 @@
 package PracticaL12;
 
-class College {
-    void display() {
+class College 
+{
+    void display() 
+    {
         System.out.println("I am a College");
     }
 }
 
-class Chairperson extends College {
-    void function() {
+class Chairperson extends College 
+{
+    void function() 
+    {
         System.out.println("I am Higher Authority");
     }
 }
 
-class HOD extends Chairperson {
-    void schedule() {
+class HOD extends Chairperson 
+{
+    void schedule() 
+    {
         System.out.println("I am Scheduling meeting for Trainers");
     }
 }

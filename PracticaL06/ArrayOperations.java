@@ -5,7 +5,7 @@ public class ArrayOperations {
         // One-Dimensional Array
         int[] arr = {10, 20, 30, 40, 50};
 
-        int sum = 10;
+        int sum = 0;
         int max = arr[0];
         int min = arr[0];
 

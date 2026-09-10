@@ -1,5 +1,7 @@
+package PracticaL11;
 
-class EncapsulationDemo
+
+public class EncapsulationDemo
 {
     public static void main(String[]args)
     {
