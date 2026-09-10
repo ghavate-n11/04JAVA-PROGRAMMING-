@@ -5,7 +5,7 @@ public class Practical1
     public static void main(String[] aa)
 
     {
-        //Part1: Display Hello World
+        //Part1: Display Hello World//
         System.out.println("----Hello World Program----");
         System.out.println("\n Hello World");
 

@@ -1,7 +1,7 @@
 
 
 class Calculator 
-{
+{//
     void add(int a, int b) //2 parameter
     {
         System.out.println("\nAddition of a & b: " + (a + b));

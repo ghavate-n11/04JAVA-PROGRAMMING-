@@ -1,4 +1,5 @@
 package PracticaL09;
+//
 import java.util.Scanner;
 class Palindrome
 {

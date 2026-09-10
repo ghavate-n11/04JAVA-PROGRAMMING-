@@ -7,7 +7,7 @@ public class QuadraticEquations
     {
        double a = 10;
        double b = 23;
-       double c = -1;
+       double c = -9;
 
        double d = b*b - 4*a*c;
 

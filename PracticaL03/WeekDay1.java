@@ -1,5 +1,5 @@
 package PracticaL03;
-
+//
 public class WeekDay1 
 {
     public static void main(String[] args) 

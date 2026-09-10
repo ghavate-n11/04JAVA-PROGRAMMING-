@@ -19,7 +19,7 @@ class Document implements Printable, Showable
     {
         System.out.println("Printing document...");
     }
-
+//
     public void show() 
     {
         System.out.println("Showing document preview...");

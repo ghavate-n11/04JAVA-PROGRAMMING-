@@ -1,5 +1,5 @@
 package PracticaL05;
-
+//
 public class Recursion
 {
     static int factorial(int n)

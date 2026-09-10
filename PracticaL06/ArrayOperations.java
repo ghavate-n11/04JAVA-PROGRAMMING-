@@ -1,5 +1,7 @@
 package PracticaL06;
-public class ArrayOperations {
+//
+public class ArrayOperations 
+{
     public static void main(String[] args) {
 
         // One-Dimensional Array

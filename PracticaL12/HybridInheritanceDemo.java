@@ -42,7 +42,7 @@ class HybridInheritanceDemo
         s.lost();
         s.deposit();
 
-
+//
         Daughter  d = new Daughter();
         d.withdraw();
         d.collect();

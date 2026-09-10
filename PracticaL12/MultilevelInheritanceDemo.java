@@ -7,7 +7,7 @@ class College
         System.out.println("I am a College");
     }
 }
-
+//
 class Chairperson extends College 
 {
     void function() 

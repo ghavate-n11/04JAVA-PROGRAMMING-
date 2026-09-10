@@ -5,7 +5,7 @@ class Practical2
         int a = 10;
         int b = 20;
 
-        System.out.println("==Arithmetic Operators==");
+        System.out.println("\n==Arithmetic Operators==");
 
         System.out.println("Addition of a & b: "+(a+b));
     }

@@ -1,6 +1,6 @@
 package PracticaL04;
 //nth term of fibbonacci sequence i want only the nth term of fibbonacci sequence
-
+//
 public class Fibonacci {
     public static void main(String[] args) {
         int  n =9; 

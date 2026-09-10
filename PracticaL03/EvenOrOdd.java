@@ -1,5 +1,5 @@
 package PracticaL03;
-
+//
 public class EvenOrOdd 
 { 
     public static void main(String[] args) 

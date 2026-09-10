@@ -1,6 +1,5 @@
 package PracticaL07;
-
-
+//
 import java.util.Arrays;
 class Sortnames
 {

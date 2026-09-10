@@ -25,7 +25,7 @@ public class ListExample {
         linkedList.add("Blue");
 
         System.out.println("LinkedList: " + linkedList);
-
+//
         // Accessing elements
         System.out.println("First element of ArrayList: " + arrayList.get(0));
         System.out.println("First element of LinkedList: " + linkedList.get(0));

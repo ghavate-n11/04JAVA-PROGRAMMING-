@@ -2,7 +2,7 @@ package PracticaL17;
 
 public class Exception {
     public static void main(String[] args) {
-
+//
         try {
             // Code that may cause an exception
             int a = 10;

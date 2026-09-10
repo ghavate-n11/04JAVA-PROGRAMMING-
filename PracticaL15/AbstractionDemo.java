@@ -3,7 +3,7 @@ package PracticaL15;
 abstract class Vehicle//abstract class it is partially implemented class 
 {
     abstract void start();//abstract method it is not implemented method
-
+//
     void stop()
     {
         System.out.println("Vehicle stopped");

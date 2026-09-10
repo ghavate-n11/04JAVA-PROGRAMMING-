@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class MapExample {
+public class MapExample 
+{//
     public static void main(String[] args) {
 
         // 1. Implementing Map using HashMap (Unordered)

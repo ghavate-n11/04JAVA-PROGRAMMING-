@@ -7,7 +7,7 @@ class Human
         System.out.println("We all are the Humans");
     }
 }
-
+//
 class Man extends Human 
 {
     void display() 

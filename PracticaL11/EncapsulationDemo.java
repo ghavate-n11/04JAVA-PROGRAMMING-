@@ -17,7 +17,7 @@ public class EncapsulationDemo
 
         System.out.println("Account Holder Name: " + ba.getName());
         System.out.println("Account Number: " + ba.getAccountNumber());
-
+//
     }
 }
 

@@ -4,7 +4,7 @@ class Animal1 {
 
     Animal1() {
         System.out.println("Parent constructor called");
-    }
+    }//
 
     void display() {
         System.out.println("Parent method");

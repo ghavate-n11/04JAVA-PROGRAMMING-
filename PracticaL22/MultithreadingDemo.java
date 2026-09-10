@@ -1,6 +1,6 @@
 package PracticaL22;
 
-// 1. Creating a thread by extending Thread class
+// 1. Creating a thread by extending Thread class//
 class MyThread extends Thread {
     @Override
     public void run() {
