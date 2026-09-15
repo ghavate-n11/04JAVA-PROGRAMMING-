@@ -1,25 +1,36 @@
 
-class Animal1 {
+class Animal
+{
     String name = "Animal";
 
-    Animal1() {
+    Animal() 
+    {
         System.out.println("Parent constructor called");
-    }//
+    }
 
-    void display() {
+    void display() 
+    {
         System.out.println("Parent method");
     }
 }
 
-class Dog1 extends Animal1 {
+class Dog extends Animal
+{
     String name = "Dog";
 
-    Dog1() {
+    Dog() 
+    {
         super();
         System.out.println("Child constructor called");
     }
+    
+    void show() 
+    {
+        System.out.println("Child method");
+    }
 
-    void display() {
+    void display() 
+    {
         System.out.println("Child name: " + this.name);
         System.out.println("Parent name: " + super.name);
 
@@ -27,14 +38,14 @@ class Dog1 extends Animal1 {
         super.display();
     }
 
-    void show() {
-        System.out.println("Child method");
-    }
+    
 }
 
-public class Main {
-    public static void main(String[] args) {
-        Dog1 d = new Dog1();
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Dog d = new Dog();
         d.display();
     }
 }

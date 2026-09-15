@@ -1,57 +1,67 @@
 package PracticaL15;
 
-abstract class Vehicle//abstract class it is partially implemented class 
+
+abstract class Vehicle
 {
-    abstract void start();//abstract method it is not implemented method
-//
+    abstract void start();
+
     void stop()
     {
-        System.out.println("Vehicle stopped");
+        System.out.println("Vehicle Stopped");
     }
+
 }
 
-interface ElectricVehicle//interface it is not fully implemented class it is fully abstract class
+interface Electric
 {
-    void chargeBattery();
+    void charge();
 }
 
-interface ConnectedVehicle
+interface Smart
 {
-    void connectToApp();
+    void autoPilot();
 }
 
-class ElectricCar extends Vehicle implements ElectricVehicle, ConnectedVehicle
+
+class Car extends Vehicle implements Electric, Smart
 {
-    @Override//it is used to override the method of parent class
+    @Override 
     void start()
     {
-        System.out.println("Electric car started");
+        System.out.println("Car Started");
+    }
+
+    @Override 
+    void stop()
+    {
+        System.out.println("Car Stopped");
+    }
+
+    @Override 
+    public void charge()
+    {
+        System.out.println("Car Charges");
     }
 
     @Override
-    public void chargeBattery()
+    public void autoPilot()
     {
-        System.out.println("Battery charging");
+        System.out.println("Car AutoPilot mode is on");
     }
 
-    @Override
-    public void connectToApp()
-    {
-        System.out.println("Car connected to mobile app");
-    }
+
 }
 
-public class AbstractionDemo
-{
-    public static void main(String[] args)
-    {
-        Vehicle vehicle = new ElectricCar();
-        ElectricVehicle electricVehicle = new ElectricCar();
-        ConnectedVehicle connectedVehicle = new ElectricCar();
 
-        vehicle.start();
-        electricVehicle.chargeBattery();
-        connectedVehicle.connectToApp();
-        vehicle.stop();
+public class   AbstractionDemo
+{
+    public static void main(String[]aa)
+    {
+        Car c1 = new Car();
+
+        c1.start();
+        c1.stop();
+        c1.charge();
+        c1.autoPilot();
     }
 }

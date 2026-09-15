@@ -2,7 +2,7 @@ package PracticaL12;
 
 class GrandFather
 {
-    void collect()
+    void deposit()
     {
         System.out.println("Money Collected Successfully");
     }
@@ -10,7 +10,7 @@ class GrandFather
 
 class father extends GrandFather
 {
-    void lost()
+    void collect()
     {
         System.out.println("Money Lost, Better Luck Next Time");
     }
@@ -18,7 +18,7 @@ class father extends GrandFather
 
 class son extends father
 {
-   void deposit()
+   void Wait()
    {
     System.out.println("Money Deposited  Successfully");
    }
@@ -39,12 +39,13 @@ class HybridInheritanceDemo
     {
         son s = new son();
         s.collect();
-        s.lost();
+        s.Wait();
         s.deposit();
 
 //
         Daughter  d = new Daughter();
         d.withdraw();
-        d.collect();
+        d.deposit();
+        
     }
 }

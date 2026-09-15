@@ -1,45 +1,36 @@
 package PracticaL11;
 
-
 public class EncapsulationDemo
 {
-    public static void main(String[]args)
+    public static void main(String[]aa)
     {
-        System.out.println("\nEncapsulationDemo\n");
+        Student s1 = new Student();
+        
+        System.out.println("\n==**EncapsulationDemo**==\n");
 
-        System.out.println("\n***BANK OF BARODA***\n");
 
+        s1.setName("OM NAMAH SHIVAY");
+        s1.setRollNo(31);
 
-        BankAccount ba = new BankAccount();
-
-        ba.setName("ABCDEFGH");
-        ba.setAccountNumber(910293293812L);
-
-        System.out.println("Account Holder Name: " + ba.getName());
-        System.out.println("Account Number: " + ba.getAccountNumber());
-//
+        System.out.println("Sudent Name: "+s1.getName());
+        System.out.println("Student Roll No: "+s1.getRollNo());
     }
 }
 
-
-class BankAccount
+class Student
 {
     private String Name;
-    private long AccountNumber;
+    private int RollNo;
 
 
-    public void setName(String AccName)
+    public void setName(String Name)
     {
-        Name = AccName;
+        this.Name = Name;
     }
 
-    public void setAccountNumber(long AccNumber )
+    public void setRollNo(int RollNo)
     {
-        if(AccNumber > 0)
-        {
-                  AccountNumber = AccNumber;
-        }
-      
+        this.RollNo = RollNo;
     }
 
     public String getName()
@@ -47,10 +38,10 @@ class BankAccount
         return Name;
     }
 
-    public long getAccountNumber()
+    public int getRollNo()
     {
-        return AccountNumber;
+        return RollNo;
     }
-}
 
+}
 

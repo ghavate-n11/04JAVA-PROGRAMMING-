@@ -1,23 +1,23 @@
 
-
-class Calculator 
-{//
-    void add(int a, int b) //2 parameter
+class Calculator
+{
+    void add(int a, int b)
     {
-        System.out.println("\nAddition of a & b: " + (a + b));
+        System.out.println("\n First add() method with 2 parameters only: "+a+b);
     }
 
-    void add(int a, int b, int c) //3 parameter
+    void add(int a, int b, int c)
     {
-        System.out.println("\nAddition of a , b & c: " + (a + b + c));
+        System.out.println("\n Second add() method with 3 parameters only: "+a+b+c);
     }
 }
 
-public class MethodLoad 
+public class MethodLoad
 {
-    static public void main(String[] a) {
-        Calculator c1 = new Calculator();
-        c1.add(12, 14);
-        c1.add(20, 30, 13);
-    }
+   public static void main(String[]aa)
+   {
+      Calculator c = new Calculator();
+    c.add(1,2);
+    c.add(2,3,1);
+   }
 }
