@@ -1,32 +1,25 @@
-class Animal 
-{
+//package PracticaL14;
 
-    void sound() 
-    {
+class Animal {
+    public void sound() {
         System.out.println("Animal makes sound");
     }
 }
 
-class Dog extends Animal 
-{
-//
+class Dog extends Animal {
     @Override
-    void sound() 
-    {
+    public void sound() {
         System.out.println("Dog barks");
     }
 }
 
 public class MethodOverriding {
-
     public static void main(String[] args) {
-
-        Animal a = new Animal(); // Upcasting: a Dog object is referenced as an Animal.
-        // Dog d = (Dog) a; // Downcasting: the Animal reference is converted back to
-        // Dog.
+        Animal a = new Dog(); // Upcasting: Dog object is referenced as Animal
         a.sound();
-        // d.sound();
-        /// d.sound(); // This will call the Dog's overridden method, not the Animal's
-        // method.
+
+        Dog d = (Dog) a; // Downcasting: Animal reference converted back to Dog
+        d.sound();
     }
 }
+//

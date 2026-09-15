@@ -23,7 +23,7 @@ public class ListExample {
         linkedList.add("Green");
         linkedList.add("Blue");
 
-        System.out.println("LinkedList: " + linkedList);
+        System.out.println("LinkedList: " + linkedList);//
 
     }
 }

@@ -3,7 +3,7 @@ class Practical2
     public static void main(String[]aa)
     {
         int a = 10;
-        int b = 20;
+        int b = 20;//
 
         System.out.println("\n==Arithmetic Operators==");
 

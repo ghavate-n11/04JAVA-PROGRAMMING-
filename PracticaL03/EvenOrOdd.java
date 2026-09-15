@@ -3,7 +3,7 @@ package PracticaL03;
 public class EvenOrOdd 
 { 
     public static void main(String[] args) 
-    {
+    {//
        int num = 13;
 
        if(num % 2 == 0)

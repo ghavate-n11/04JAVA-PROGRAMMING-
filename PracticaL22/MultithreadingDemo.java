@@ -2,7 +2,7 @@ package PracticaL22;
 
 // 1. Creating a thread by extending Thread class//
 class MyThread extends Thread {
-    @Override
+    @Override//
     public void run() {
         for (int i = 1; i <= 5; i++) {
             System.out.println("Thread class running: " + i);

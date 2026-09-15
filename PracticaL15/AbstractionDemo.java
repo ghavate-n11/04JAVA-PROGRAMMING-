@@ -50,7 +50,7 @@ class Car extends Vehicle implements Electric, Smart
     }
 
 
-}
+}//
 
 
 public class   AbstractionDemo

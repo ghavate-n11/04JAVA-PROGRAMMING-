@@ -1,51 +1,57 @@
+package PracticaL13;
+public class Main
+{
+  public static void main(String []aa)
+  {
+    Lion king = new Lion();
+    king.display();
+  }
+}
+
+
 
 class Animal
 {
-    String name = "Animal";
-
-    Animal() 
+    Animal()
     {
-        System.out.println("Parent constructor called");
+        System.out.println("Parent class Constructor is called");
     }
 
-    void display() 
+    void sound()
     {
-        System.out.println("Parent method");
+        System.out.println("Parent class method is called");
     }
+
+    String name = "Monk";
 }
 
-class Dog extends Animal
-{
-    String name = "Dog";
 
-    Dog() 
+class Lion extends Animal
+{
+    Lion()
     {
         super();
-        System.out.println("Child constructor called");
+
+        System.out.println("Child class constructor is called");
     }
-    
-    void show() 
+
+    void noise()
     {
-        System.out.println("Child method");
+        System.out.println("Child class method is called");
     }
 
-    void display() 
+    String name = "King";
+
+
+    void display()
     {
-        System.out.println("Child name: " + this.name);
-        System.out.println("Parent name: " + super.name);
-
-        this.show();
-        super.display();
-    }
-
+        System.out.println("Parent class variable achieved via super keyword: "+super.name);
+        System.out.println("Child class variable achived via this keyword: "+this.name);
     
+
+    super.sound();
+    this.noise();
+    }
 }
 
-public class Main 
-{
-    public static void main(String[] args) 
-    {
-        Dog d = new Dog();
-        d.display();
-    }
-}
+//

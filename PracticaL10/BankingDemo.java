@@ -1,7 +1,7 @@
 package PracticaL10;
 //
 class BankAccount {
-    String Name = "GHIKLM";
+    String Name = "GHIKLM";//
     long AccountNumber = 1000l;
 
     BankAccount() {

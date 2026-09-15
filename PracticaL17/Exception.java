@@ -4,7 +4,7 @@ public class Exception
 {
     public static void main(String[] args) 
     {
-        // 1. ArithmeticException
+        // 1. ArithmeticException//
         try 
         {
             int a = 10;

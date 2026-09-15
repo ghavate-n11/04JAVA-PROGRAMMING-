@@ -5,7 +5,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         int  n =9; 
         int first = 0, second = 1;
-        int  nthTerm = 0;
+        int  nthTerm = 0;//
 
             if (n == 1) 
             {

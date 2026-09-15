@@ -5,7 +5,7 @@ public class Prime {
     {
 
         int num = 12;
-        int i = 2;
+        int i = 2;//
 
         if(num == 2) 
         {
