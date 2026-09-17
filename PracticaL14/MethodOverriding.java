@@ -22,4 +22,4 @@ public class MethodOverriding {
         d.sound();
     }
 }
-//
+//1
